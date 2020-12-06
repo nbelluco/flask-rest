@@ -1,7 +1,7 @@
-# Flask API
+## Flask API
 
-## Tests
+Run the venv-install.sh script from root folder to install the virtual environment and all requirements.
 
-To run tests, execute the following command in the root folder:
+Run run-tests.sh script from root folder to run tests.
 
-    python -m unittest discover tests
+Run main.sh script from root folder to launch the application.
