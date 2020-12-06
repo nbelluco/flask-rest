@@ -8,5 +8,4 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../api.db'
 db = SQLAlchemy(app)
 db.create_all()
 
-
 from src import routes

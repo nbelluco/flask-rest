@@ -29,12 +29,13 @@ def post_plate():
         return BadRequest('Missing required body field: plate')
 
     if type(plate_string) != str:
-        return BadRequest('Invalid type for body field: plate')
+        return BadRequest('Required plate field of type string')
 
     if not validate_german_plate(plate_string):
         return Response('Invalid plate format', 422)
 
     plate = Plate(code=plate_string)
+
     db.session.add(plate)
     db.session.commit()
 
